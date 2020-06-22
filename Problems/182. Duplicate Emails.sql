@@ -1,8 +1,8 @@
 #Solution 1
 SELECT Email
-FROM (SELECT Email, count(Email) as num
+FROM (SELECT Email, count(Email) AS num
       FROM Person
-      GROUP BY Email) as statistic
+      GROUP BY Email) AS statistic
 WHERE num > 1
 
 #Solution 2
